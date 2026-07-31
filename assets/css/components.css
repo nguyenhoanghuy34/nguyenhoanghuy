@@ -1,0 +1,222 @@
+.btn{
+
+    display:inline-block;
+
+    padding:15px 32px;
+
+    background:var(--primary);
+
+    color:white;
+
+    border-radius:999px;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.btn-outline{
+
+    display:inline-block;
+
+    padding:15px 32px;
+
+    border-radius:999px;
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    padding:35px;
+
+}
+
+.project-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+    gap:35px;
+
+}
+
+.project-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:22px;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.skill-tags{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.skill-tags span{
+
+    background:white;
+
+    padding:12px 22px;
+
+    border-radius:999px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin-top:50px;
+
+}
+
+.stats .card{
+
+    text-align:center;
+
+}
+
+.timeline{
+
+    position:relative;
+
+    padding-left:40px;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:10px;
+
+    top:0;
+
+    width:3px;
+
+    height:100%;
+
+    background:var(--primary);
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    margin-bottom:60px;
+
+}
+
+.timeline-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-38px;
+
+    top:5px;
+
+    width:18px;
+
+    height:18px;
+
+    background:var(--primary);
+
+    border-radius:50%;
+
+}
+
+
+.back-top{
+
+position:fixed;
+
+right:35px;
+
+bottom:35px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:var(--primary);
+
+color:white;
+
+font-size:20px;
+
+cursor:pointer;
+
+opacity:0;
+
+pointer-events:none;
+
+transition:.35s;
+
+box-shadow:var(--shadow);
+
+}
+
+.back-top.active{
+
+opacity:1;
+
+pointer-events:auto;
+
+}
+
+.menu a.active{
+
+color:var(--primary);
+
+font-weight:700;
+
+}

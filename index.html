@@ -1,121 +1,595 @@
 <!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <title>CV - Nguyen Hoang Huy</title>
-</head>
-<body><!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nguyen Hoang Huy - CV</title>
-  <link rel="stylesheet" href="style.css"/>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Nguyen Hoang Huy | Data Scientist
+    </title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/reset.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/variables.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/layout.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/components.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/animation.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/responsive.css"
+    >
+
 </head>
 
 <body>
-  <div class="container">
 
-    <!-- HEADER -->
-    <header>
-      <h1>Nguyen Hoang Huy</h1>
-      <p class="role">Data Scientist | Agentic AI Engineer</p>
+    <!-- NAVBAR -->
 
-      <div class="contact">
-        <span>📞 0359871140</span>
-        <span>✉️ ng.hhuy03@gmail.com</span>
-        <span>🔗 LinkedIn / GitHub</span>
-      </div>
-    </header>
+<nav class="navbar">
 
-    <!-- OBJECTIVE -->
-    <section>
-      <h2>Objective</h2>
-      <p>
-        Data Scientist and Agentic AI Engineer with experience in building production-level AI systems,
-        specializing in forecasting, NLP, and multi-agent architectures for business applications.
-      </p>
-    </section>
+    <div class="container">
 
-    <!-- EDUCATION -->
-    <section>
-      <h2>Education</h2>
-      <div class="item">
-        <h3>UEH College of Technology and Design</h3>
-        <span>2022 – 2026</span>
-        <p>B.Eng. Software Engineering | GPA: 3.64/4.0 (Top 5%)</p>
-      </div>
-    </section>
+        <a href="#" class="logo">
+            HUY.
+        </a>
 
-    <!-- EXPERIENCE -->
-    <section>
-      <h2>Experience</h2>
 
-      <div class="item">
-        <h3>BIT-UEH Research Team</h3>
-        <span>2024 – Present</span>
-        <ul>
-          <li>Data analysis and ML pipeline development using Python stack</li>
-          <li>Built experiment pipelines with Scikit-learn, NumPy, Pandas</li>
-          <li>Contributed to research papers in AI/ML domains</li>
+        <ul class="menu">
+
+            <li>
+                <a href="#about">
+                    About
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#experience">
+                    Experience
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#projects">
+                    Projects
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#research">
+                    Research
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#skills">
+                    Skills
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#contact">
+                    Contact
+                </a>
+            </li>
+
+
         </ul>
-      </div>
+
+
+        <button class="theme-btn">
+
+            🌙
+
+        </button>
+
+
+    </div>
+
+</nav>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-left">
+
+            <p class="hello">
+
+                Hello, I'm
+
+            </p>
+
+            <h1>
+
+                Nguyen Hoang Huy
+
+            </h1>
+
+            <h2>
+
+                <span id="typing"></span>
+
+            </h2>
+
+            <p class="description">
+
+                Building production-ready AI systems using Machine Learning,
+                Deep Learning, LLMs, Multi-Agent AI, and Data Engineering.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a
+                    href="assets/files/NguyenHoangHuy_CV.pdf"
+                    class="btn"
+                >
+
+                    Download CV
+
+                </a>
+
+                <a
+                    href="#projects"
+                    class="btn-outline"
+                >
+
+                    Projects
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+
+            <img
+                src="assets/images/avatar.jpg"
+                alt="Avatar"
+            >
+
+        </div>
 
     </section>
 
-    <!-- PROJECTS -->
-    <section>
-      <h2>Projects</h2>
+    <!-- ================= ABOUT ================= -->
 
-      <div class="item">
-        <h3>Agentic Web Crawler</h3>
-        <p class="tech">React, NestJS, LangChain, FastAPI, PostgreSQL</p>
-        <ul>
-          <li>Built scalable crawling system with 100k+ records / 30 minutes</li>
-          <li>Reduced manual data processing by 80%</li>
-          <li>Implemented async crawling + rate limiting + retry system</li>
-        </ul>
-      </div>
+    <section
+        class="section"
+        id="about"
+    >
 
-      <div class="item">
-        <h3>Credit Card Fraud Detection</h3>
-        <p class="tech">XGBoost, SMOTE, Optuna</p>
-        <ul>
-          <li>Handled extreme class imbalance (99.83% vs 0.17%)</li>
-          <li>Achieved ~90% precision, 85% recall</li>
-          <li>Optimized model with hyperparameter tuning</li>
-        </ul>
-      </div>
+        <h2>
+
+            About Me
+
+        </h2>
+
+        <p>
+
+            Data Scientist and Agentic AI Engineer passionate about
+            building intelligent systems for real-world applications.
+
+            My interests include Machine Learning, Forecasting,
+            NLP, LLMs, Agentic AI,
+            Data Engineering,
+            and scalable AI deployment.
+
+        </p>
+
+        <div class="stats">
+
+            <div class="card">
+
+                <h3>
+
+                    3.64 / 4.0
+
+                </h3>
+
+                <p>
+
+                    GPA
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    Top 5%
+
+                </h3>
+
+                <p>
+
+                    Academic Ranking
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    10+
+
+                </h3>
+
+                <p>
+
+                    AI Projects
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+
+                    4+
+
+                </h3>
+
+                <p>
+
+                    Research Works
+
+                </p>
+
+            </div>
+
+        </div>
 
     </section>
 
-    <!-- SKILLS -->
-    <section>
-      <h2>Skills</h2>
-      <p>
-        Python · SQL · JavaScript · React · FastAPI · PyTorch · Scikit-learn ·
-        LangChain · LangGraph · CrewAI · OpenAI API · RAG · PostgreSQL
-      </p>
+    <!-- ================= EXPERIENCE ================= -->
+
+    <section
+        class="section"
+        id="experience"
+    >
+
+        <h2>
+
+            Experience
+
+        </h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="year">
+
+                    2024 - Present
+
+                </div>
+
+                <div class="content">
+
+                    <h3>
+
+                        BIT UEH Research Team
+
+                    </h3>
+
+                    <p>
+
+                        Machine Learning Research Assistant
+
+                    </p>
+
+                    <ul>
+
+                        <li>
+
+                            Built Machine Learning pipelines
+
+                        </li>
+
+                        <li>
+
+                            Conducted AI research
+
+                        </li>
+
+                        <li>
+
+                            Published academic papers
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
 
-    <!-- FOOTER -->
+    <!-- ================= PROJECTS ================= -->
+
+    <section
+        class="section"
+        id="projects"
+    >
+
+        <h2>
+
+            Featured Projects
+
+        </h2>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+
+                <h3>
+
+                    Agentic Web Crawler
+
+                </h3>
+
+                <p>
+
+                    React · FastAPI · PostgreSQL · LangChain
+
+                </p>
+
+                <ul>
+
+                    <li>
+
+                        100k+ records in 30 minutes
+
+                    </li>
+
+                    <li>
+
+                        Async Crawling
+
+                    </li>
+
+                    <li>
+
+                        Retry Mechanism
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="project-card">
+
+                <h3>
+
+                    Credit Card Fraud Detection
+
+                </h3>
+
+                <p>
+
+                    XGBoost · Optuna · MLflow
+
+                </p>
+
+                <ul>
+
+                    <li>
+
+                        Precision 90%
+
+                    </li>
+
+                    <li>
+
+                        Recall 85%
+
+                    </li>
+
+                    <li>
+
+                        Hyperparameter Tuning
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= RESEARCH ================= -->
+
+    <section
+        class="section"
+        id="research"
+    >
+
+        <h2>
+
+            Research
+
+        </h2>
+
+        <div class="research-card">
+
+            <h3>
+
+                Quantum Image Representation
+
+            </h3>
+
+            <p>
+
+                Bachelor's Thesis focusing on quantum feature extraction
+                using interference patterns for image classification.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+
+    <section
+        class="section"
+        id="skills"
+    >
+
+        <h2>
+
+            Tech Stack
+
+        </h2>
+
+        <div class="skill-tags">
+
+            <span>Python</span>
+            <span>SQL</span>
+            <span>Pandas</span>
+            <span>NumPy</span>
+            <span>Scikit-learn</span>
+            <span>PyTorch</span>
+            <span>TensorFlow</span>
+            <span>FastAPI</span>
+            <span>React</span>
+            <span>Docker</span>
+            <span>PostgreSQL</span>
+            <span>MLflow</span>
+            <span>LangChain</span>
+            <span>LangGraph</span>
+            <span>CrewAI</span>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section
+        class="section"
+        id="contact"
+    >
+
+        <h2>
+
+            Contact
+
+        </h2>
+
+        <div class="contact-grid">
+
+            <div>
+
+                <i class="fa-solid fa-envelope"></i>
+
+                ng.hhuy03@gmail.com
+
+            </div>
+
+            <div>
+
+                <i class="fa-brands fa-github"></i>
+
+                GitHub
+
+            </div>
+
+            <div>
+
+                <i class="fa-brands fa-linkedin"></i>
+
+                LinkedIn
+
+            </div>
+
+        </div>
+
+    </section>
+
     <footer>
-      <p>© 2026 Nguyen Hoang Huy</p>
+
+        © 2026 Nguyen Hoang Huy
+
     </footer>
 
-  </div>
-</body>
-</html>
-  <h1>Nguyen Hoang Huy ne</h1>
-  <p>Backend / Frontend Developer</p>
+    <script src="assets/js/main.js"></script>
 
-  <h2>About</h2>
-  <p>Đang xây dựng portfolio cá nhân.</p>
+    <script src="assets/js/navbar.js"></script>
 
-  <h2>Projects</h2>
-  <ul>
-    <li>Web Crawler Project</li>
-    <li>AI / Data project</li>
-  </ul>
+    <script src="assets/js/typing.js"></script>
+
+    <script src="assets/js/scroll.js"></script>
+
 </body>
+
 </html>
