@@ -17,13 +17,21 @@ COLORS
 BACKGROUND
 =========================================*/
 
---bg:#020617;
+--bg:#05070d;
 
---surface:#0f172a;
+--surface:#0b1120;
 
---surface-light:#1e293b;
+--surface-light:#111827;
 
---surface-card:rgba(15,23,42,.72);
+--surface-card:rgba(17,24,39,.65);
+
+--background-gradient:
+linear-gradient(
+180deg,
+#05070d 0%,
+#05070d 55%,
+#080c14 100%
+);
 
 
 /*=========================================
