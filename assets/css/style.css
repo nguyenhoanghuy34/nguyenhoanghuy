@@ -1,26 +1,71 @@
+/*=========================================
+BODY
+=========================================*/
+
 body{
+
+    background:var(--background-gradient);
+
+    color:var(--text);
 
     overflow-x:hidden;
 
+    position:relative;
+
 }
 
-/*=========================
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-10;
+
+    background:
+
+    radial-gradient(
+        circle at 15% 20%,
+        rgba(59,130,246,.16),
+        transparent 30%
+    ),
+
+    radial-gradient(
+        circle at 85% 10%,
+        rgba(96,165,250,.12),
+        transparent 35%
+    ),
+
+    radial-gradient(
+        circle at 55% 90%,
+        rgba(37,99,235,.10),
+        transparent 35%
+    );
+
+    pointer-events:none;
+
+}
+
+
+/*=========================================
 NAVBAR
-=========================*/
+=========================================*/
 
 .navbar{
 
     position:fixed;
 
-    width:100%;
-
     top:0;
 
     left:0;
 
+    width:100%;
+
     z-index:999;
 
-    background:rgba(255,255,255,.85);
+    background:rgba(2,6,23,.75);
 
     backdrop-filter:blur(18px);
 
@@ -30,7 +75,7 @@ NAVBAR
 
 .navbar .container{
 
-    height:75px;
+    height:78px;
 
     display:flex;
 
@@ -42,11 +87,11 @@ NAVBAR
 
 .logo{
 
-    font-size:1.6rem;
+    font-size:1.7rem;
 
     font-weight:800;
 
-    color:var(--primary);
+    color:white;
 
 }
 
@@ -54,23 +99,26 @@ NAVBAR
 
     display:flex;
 
+    align-items:center;
+
     gap:35px;
 
 }
 
 .menu a{
 
-    font-weight:500;
+    color:var(--text-light);
 
-    transition:.3s;
+    transition:var(--transition);
 
 }
 
 .menu a:hover{
 
-    color:var(--primary);
+    color:var(--secondary);
 
 }
+
 
 /*=========================================
 HERO
@@ -84,9 +132,9 @@ HERO
 
     display:flex;
 
-    align-items:center;
-
     justify-content:center;
+
+    align-items:center;
 
     text-align:center;
 
@@ -102,24 +150,61 @@ HERO
 
     position:absolute;
 
-    width:700px;
+    width:900px;
 
-    height:700px;
+    height:900px;
 
-    top:-220px;
+    top:-280px;
 
-    right:-220px;
+    right:-280px;
+
+    border-radius:50%;
 
     background:
+
     radial-gradient(
-        circle,
-        rgba(37,99,235,.18),
+
+        rgba(59,130,246,.18),
+
         transparent 70%
+
     );
 
-    filter:blur(30px);
+    filter:blur(50px);
 
-    z-index:-1;
+    z-index:-2;
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:800px;
+
+    height:800px;
+
+    left:-250px;
+
+    bottom:-250px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(
+
+        rgba(96,165,250,.10),
+
+        transparent 70%
+
+    );
+
+    filter:blur(70px);
+
+    z-index:-2;
 
 }
 
@@ -137,17 +222,19 @@ HERO
 
     width:100%;
 
-    max-width:900px;
-
-    margin:0 auto;
+    max-width:950px;
 
 }
 
 .hello{
 
-    font-size:1.15rem;
-
     color:var(--text-muted);
+
+    font-size:1.1rem;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
 
     margin-bottom:20px;
 
@@ -155,7 +242,7 @@ HERO
 
 .hero-title{
 
-    font-size:clamp(3rem,7vw,5.5rem);
+    font-size:clamp(3.2rem,7vw,5.8rem);
 
     font-weight:900;
 
@@ -167,7 +254,7 @@ HERO
 
     -webkit-background-clip:text;
 
-    color:transparent;
+    -webkit-text-fill-color:transparent;
 
 }
 
@@ -177,11 +264,11 @@ HERO
 
     font-weight:700;
 
-    color:var(--primary);
+    color:var(--secondary);
 
     margin-bottom:30px;
 
-    min-height:45px;
+    min-height:50px;
 
 }
 
@@ -207,13 +294,16 @@ HERO
 
     justify-content:center;
 
-    align-items:center;
-
     gap:20px;
 
     flex-wrap:wrap;
 
 }
+
+
+/*=========================================
+HERO STATS
+=========================================*/
 
 .hero-stats{
 
@@ -229,15 +319,19 @@ HERO
 
 .hero-stat{
 
-    background:white;
-
-    padding:30px 20px;
+    padding:32px 20px;
 
     border-radius:20px;
 
+    background:var(--surface-card);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid var(--border);
+
     box-shadow:var(--shadow);
 
-    transition:.3s;
+    transition:var(--transition);
 
 }
 
@@ -245,13 +339,15 @@ HERO
 
     transform:translateY(-8px);
 
+    border-color:rgba(96,165,250,.4);
+
 }
 
 .hero-stat h3{
 
     font-size:2rem;
 
-    color:var(--primary);
+    color:white;
 
     margin-bottom:10px;
 
