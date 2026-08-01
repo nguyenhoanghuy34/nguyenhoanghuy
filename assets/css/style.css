@@ -1,10 +1,10 @@
-/*=========================================
+/*==================================================
 BODY
-=========================================*/
+==================================================*/
 
 body{
 
-    background:var(--background-gradient);
+    background:#050505;
 
     color:var(--text);
 
@@ -26,7 +26,7 @@ body::before{
 
     pointer-events:none;
 
-    z-index:-2;
+    z-index:-10;
 
     background:
 
@@ -34,11 +34,11 @@ body::before{
 
         circle at top right,
 
-        rgba(59,130,246,.14) 0%,
+        rgba(79,140,255,.16),
 
-        rgba(59,130,246,.08) 18%,
+        rgba(79,140,255,.08) 20%,
 
-        transparent 42%
+        transparent 45%
 
     );
 
@@ -46,51 +46,49 @@ body::before{
 
 
 
-/*=========================================
+/*==================================================
 NAVBAR
-=========================================*/
+==================================================*/
 
 .navbar{
 
     position:fixed;
 
-    top:0;
+    top:20px;
 
-    left:0;
+    left:50%;
 
-    width:100%;
+    transform:translateX(-50%);
 
     z-index:1000;
 
-    background:rgba(5,7,13,.72);
+    padding:10px 25px;
+
+    border-radius:999px;
+
+    background:rgba(18,18,18,.75);
 
     backdrop-filter:blur(18px);
 
-    border-bottom:1px solid rgba(255,255,255,.05);
-
-    transition:.3s;
+    border:1px solid rgba(255,255,255,.06);
 
 }
 
 .navbar .container{
 
-    height:78px;
-
     display:flex;
 
-    justify-content:space-between;
-
     align-items:center;
+
+    justify-content:center;
+
+    gap:40px;
 
 }
 
 .logo{
 
-    font-size:1.7rem;
-
-    font-weight:800;
-
-    color:#ffffff;
+    display:none;
 
 }
 
@@ -100,105 +98,157 @@ NAVBAR
 
     align-items:center;
 
-    gap:35px;
+    gap:28px;
 
 }
 
 .menu a{
 
-    color:var(--text-light);
+    color:#d1d5db;
+
+    font-size:.95rem;
 
     transition:.3s;
-
-    font-weight:500;
 
 }
 
 .menu a:hover{
 
-    color:var(--primary);
+    color:#ffffff;
 
 }
 
 
 
-/*=========================================
+/*==================================================
+BUTTON
+==================================================*/
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:14px 28px;
+
+    border-radius:999px;
+
+    background:#ffffff;
+
+    color:#050505;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.btn-outline{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:14px 28px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(255,255,255,.1);
+
+    color:white;
+
+    transition:.3s;
+
+}
+
+.btn-outline:hover{
+
+    background:rgba(255,255,255,.05);
+
+}
+
+
+
+/*==================================================
 HERO
-=========================================*/
+==================================================*/
 
 .hero{
-
-    position:relative;
 
     min-height:100vh;
 
     display:flex;
 
-    justify-content:center;
-
     align-items:center;
 
-    text-align:center;
+    justify-content:center;
 
-    padding:120px 0 80px;
+    text-align:left;
+
+    position:relative;
 
 }
 
 .hero .container{
 
-    width:100%;
+    max-width:1100px;
 
-    display:flex;
-
-    justify-content:center;
+    width:92%;
 
 }
 
 .hero-content{
 
-    max-width:900px;
-
-    margin:auto;
+    width:700px;
 
 }
 
 .hello{
 
-    font-size:1rem;
+    color:#9ca3af;
 
-    color:var(--text-muted);
+    font-size:.95rem;
 
-    letter-spacing:3px;
+    letter-spacing:2px;
 
     text-transform:uppercase;
-
-    margin-bottom:20px;
 
 }
 
 .hero-title{
 
-    font-size:clamp(3.5rem,8vw,6rem);
+    margin-top:15px;
 
-    line-height:1.1;
+    font-size:clamp(3.8rem,7vw,6rem);
 
-    font-weight:900;
-
-    margin-bottom:18px;
+    line-height:1;
 
     color:white;
+
+    font-weight:900;
 
 }
 
 .hero-subtitle{
 
+    margin-top:20px;
+
     font-size:2rem;
 
-    color:var(--primary);
+    color:#5ea2ff;
 
     font-weight:700;
-
-    margin-bottom:30px;
 
     min-height:50px;
 
@@ -206,15 +256,15 @@ HERO
 
 .hero-description{
 
-    max-width:760px;
+    margin-top:30px;
 
-    margin:auto;
+    max-width:650px;
 
-    color:var(--text-muted);
+    color:#9ca3af;
+
+    font-size:1.15rem;
 
     line-height:1.9;
-
-    font-size:1.1rem;
 
 }
 
@@ -222,47 +272,43 @@ HERO
 
     display:flex;
 
-    justify-content:center;
-
-    gap:20px;
+    gap:18px;
 
     margin-top:45px;
-
-    flex-wrap:wrap;
 
 }
 
 
 
-/*=========================================
+/*==================================================
 HERO STATS
-=========================================*/
+==================================================*/
 
 .hero-stats{
-
-    margin-top:70px;
 
     display:grid;
 
     grid-template-columns:repeat(4,1fr);
 
-    gap:25px;
+    gap:22px;
+
+    margin-top:70px;
 
 }
 
 .hero-stat{
 
+    padding:28px;
+
+    border-radius:18px;
+
     background:rgba(255,255,255,.03);
 
-    backdrop-filter:blur(16px);
+    border:1px solid rgba(255,255,255,.05);
 
-    border:1px solid rgba(255,255,255,.06);
+    backdrop-filter:blur(12px);
 
-    border-radius:20px;
-
-    padding:30px;
-
-    transition:.3s;
+    transition:.35s;
 
 }
 
@@ -270,7 +316,7 @@ HERO STATS
 
     transform:translateY(-8px);
 
-    border-color:rgba(59,130,246,.4);
+    border-color:rgba(94,162,255,.35);
 
 }
 
@@ -286,8 +332,106 @@ HERO STATS
 
 .hero-stat span{
 
-    color:var(--text-muted);
+    color:#9ca3af;
 
-    font-size:.95rem;
+}
+
+
+
+/*==================================================
+SECTION
+==================================================*/
+
+.section{
+
+    padding:120px 0;
+
+}
+
+.section-header{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.section-header h2{
+
+    font-size:3rem;
+
+    color:white;
+
+}
+
+.section-header p{
+
+    margin-top:20px;
+
+    color:#9ca3af;
+
+    max-width:700px;
+
+    margin-inline:auto;
+
+}
+
+
+
+/*==================================================
+CARD
+==================================================*/
+
+.card{
+
+    background:#0d0d0d;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(94,162,255,.3);
+
+}
+
+
+
+/*==================================================
+SCROLLBAR
+==================================================*/
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#050505;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2c2c2c;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#4b5563;
 
 }
