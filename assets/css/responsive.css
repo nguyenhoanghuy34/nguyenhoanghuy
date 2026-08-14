@@ -1,0 +1,22 @@
+/* ========================================
+   Responsive
+======================================== */
+
+@media (max-width: 800px) {
+
+    .portfolio {
+        grid-template-columns: 1fr;
+        gap: 50px;
+
+        padding: 50px 24px;
+    }
+
+    .profile-avatar {
+        width: 140px;
+        height: 140px;
+    }
+
+    .content {
+        gap: 48px;
+    }
+}

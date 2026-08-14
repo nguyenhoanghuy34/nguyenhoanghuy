@@ -1,0 +1,22 @@
+/* ========================================
+   Main Layout
+======================================== */
+
+.portfolio {
+    width: min(1200px, 100%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 80px;
+
+    padding: 80px 40px;
+}
+
+.profile {
+    position: relative;
+}
+
+.content {
+    min-width: 0;
+}
