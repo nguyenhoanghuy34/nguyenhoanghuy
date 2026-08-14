@@ -19,7 +19,7 @@ async function loadSection(id, file) {
         }
 
     } catch (error) {
-        console.error(error);
+        console.error(`Error loading ${file}:`, error);
     }
 }
 
