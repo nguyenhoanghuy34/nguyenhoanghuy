@@ -4,15 +4,19 @@
 
 async function loadSection(id, file) {
     try {
-        const response = await fetch(`sections/${file}`);
+        const response = await fetch(`./sections/${file}`);
 
         if (!response.ok) {
-            throw new Error(`Failed to load ${file}`);
+            throw new Error(`Failed to load ${file}: ${response.status}`);
         }
 
         const html = await response.text();
 
-        document.getElementById(id).innerHTML = html;
+        const element = document.getElementById(id);
+
+        if (element) {
+            element.innerHTML = html;
+        }
 
     } catch (error) {
         console.error(error);
@@ -20,7 +24,11 @@ async function loadSection(id, file) {
 }
 
 
-const sections = [
+/* ========================================
+   Portfolio Sections
+======================================== */
+
+const sectionList = [
     ["about", "about.html"],
     ["research", "research.html"],
     ["projects", "projects.html"],
@@ -30,22 +38,14 @@ const sections = [
 ];
 
 
-sections.forEach(([id, file]) => {
-    loadSection(id, file);
-});
+/* ========================================
+   Initialize
+======================================== */
 
+document.addEventListener("DOMContentLoaded", () => {
 
-const sections = [
-    ["about", "about.html"],
-    ["research", "research.html"],
-    ["projects", "projects.html"],
-    ["publications", "publications.html"],
-    ["experience", "experience.html"],
-    ["education", "education.html"],
-    ["certifications", "certifications.html"],
-    ["skills", "skills.html"]
-];
+    sectionList.forEach(([id, file]) => {
+        loadSection(id, file);
+    });
 
-sections.forEach(([id, file]) => {
-    loadSection(id, file);
 });
