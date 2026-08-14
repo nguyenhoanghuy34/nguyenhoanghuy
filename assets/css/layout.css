@@ -1,22 +1,28 @@
-/* ========================================
-   Main Layout
-======================================== */
-
 .portfolio {
-    width: min(1200px, 100%);
+    width: min(1180px, 100%);
+
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: 280px 1fr;
-    gap: 80px;
+    grid-template-columns: 270px 1fr;
 
-    padding: 80px 40px;
+    gap: 100px;
+
+    padding: 90px 40px;
 }
 
 .profile {
-    position: relative;
+    position: sticky;
+    top: 90px;
+
+    height: fit-content;
 }
 
 .content {
     min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 80px;
 }

@@ -1,22 +1,35 @@
-/* ========================================
-   Responsive
-======================================== */
-
 @media (max-width: 800px) {
 
     .portfolio {
         grid-template-columns: 1fr;
-        gap: 50px;
 
-        padding: 50px 24px;
+        gap: 55px;
+
+        padding: 55px 25px;
+    }
+
+    .profile {
+        position: relative;
+
+        top: auto;
     }
 
     .profile-avatar {
-        width: 140px;
-        height: 140px;
+        width: 125px;
+        height: 125px;
     }
 
     .content {
-        gap: 48px;
+        gap: 60px;
+    }
+
+    .item-header {
+        flex-direction: column;
+
+        gap: 4px;
+    }
+
+    .item-date {
+        white-space: normal;
     }
 }

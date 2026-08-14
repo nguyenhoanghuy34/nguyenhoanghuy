@@ -1,34 +1,176 @@
-/* ========================================
-   Content Sections
-======================================== */
-
-.content {
-    display: flex;
-    flex-direction: column;
-    gap: 64px;
-}
-
-.content section {
-    width: 100%;
+.portfolio-section {
+    position: relative;
 }
 
 .section-title {
-    font-size: 22px;
+    font-size: 19px;
+
     font-weight: 600;
 
-    margin-bottom: 20px;
+    letter-spacing: -0.2px;
+
+    color: #f8fafc;
+
+    margin-bottom: 14px;
 }
 
 .section-divider {
-    width: 100%;
-    height: 1px;
+    width: 45px;
+    height: 2px;
 
-    background: #e5e5e5;
+    background: #7dd3fc;
 
-    margin-bottom: 24px;
+    margin-bottom: 25px;
+
+    opacity: 0.8;
 }
 
 .section-content {
+    color: #aeb5bf;
+
     font-size: 15px;
-    color: #444;
+
+    max-width: 760px;
+}
+
+.experience-item,
+.project-item,
+.publication-item,
+.education-item {
+    padding: 25px 0;
+
+    border-bottom: 1px solid #1d2229;
+}
+
+.experience-item:first-of-type,
+.project-item:first-of-type {
+    padding-top: 0;
+}
+
+.item-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 30px;
+
+    margin-bottom: 10px;
+}
+
+.item-header h3,
+.project-item h3,
+.publication-item h3 {
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #e8eaed;
+}
+
+.item-role {
+    color: #7dd3fc;
+
+    font-size: 14px;
+
+    margin-top: 3px;
+}
+
+.item-date {
+    color: #6f7782;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+}
+
+.tech-stack {
+    color: #737d89;
+
+    font-size: 13px;
+
+    margin: 12px 0;
+}
+
+.experience-item ul,
+.project-item ul,
+.education-item ul {
+    padding-left: 18px;
+
+    color: #aeb5bf;
+
+    font-size: 14px;
+}
+
+.experience-item li,
+.project-item li,
+.education-item li {
+    margin-bottom: 8px;
+}
+
+.project-meta {
+    color: #737d89;
+
+    font-size: 13px;
+
+    margin-top: 3px;
+}
+
+.project-status {
+    color: #737d89;
+
+    font-size: 13px;
+
+    font-style: italic;
+
+    margin-bottom: 12px;
+}
+
+.project-link {
+    color: #7dd3fc;
+
+    font-size: 13px;
+
+    transition: 0.2s ease;
+}
+
+.project-link:hover {
+    color: #bae6fd;
+}
+
+.publication-item {
+    display: flex;
+
+    gap: 25px;
+}
+
+.publication-year {
+    color: #7dd3fc;
+
+    font-size: 13px;
+
+    min-width: 40px;
+}
+
+.publication-item p {
+    color: #8f98a3;
+
+    font-size: 14px;
+}
+
+.publication-meta {
+    margin-top: 4px;
+}
+
+.publication-meta a {
+    color: #7dd3fc;
+}
+
+.education-location {
+    color: #737d89;
+
+    font-size: 13px;
+
+    margin-bottom: 10px;
 }
