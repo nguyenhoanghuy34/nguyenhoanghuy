@@ -33,3 +33,19 @@ const sections = [
 sections.forEach(([id, file]) => {
     loadSection(id, file);
 });
+
+
+const sections = [
+    ["about", "about.html"],
+    ["research", "research.html"],
+    ["projects", "projects.html"],
+    ["publications", "publications.html"],
+    ["experience", "experience.html"],
+    ["education", "education.html"],
+    ["certifications", "certifications.html"],
+    ["skills", "skills.html"]
+];
+
+sections.forEach(([id, file]) => {
+    loadSection(id, file);
+});

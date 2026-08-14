@@ -1,1 +1,91 @@
+<section class="portfolio-section">
+    <h2 class="section-title">Projects</h2>
+    <div class="section-divider"></div>
 
+    <article class="project-item">
+        <div class="item-header">
+            <div>
+                <h3>Market Risk Classification for Bitcoin</h3>
+                <p class="project-meta">
+                    Machine Learning · Time Series · MLOps
+                </p>
+            </div>
+
+            <a href="#" class="project-link">GitHub ↗</a>
+        </div>
+
+        <p class="project-status">
+            Currently under active development and continuous expansion.
+        </p>
+
+        <ul>
+            <li>
+                Developed an end-to-end Machine Learning pipeline for BTCUSDT
+                market risk classification using 2M+ historical 1-minute
+                candlestick records.
+            </li>
+
+            <li>
+                Designed automated ETL and feature engineering workflows using
+                Python and Pandas, generating 60+ financial features covering
+                momentum, trend, volatility, volume, and price action.
+            </li>
+
+            <li>
+                Built and evaluated Logistic Regression, XGBoost, Random Forest,
+                and LSTM models with experiment tracking using MLflow.
+            </li>
+
+            <li>
+                Implemented time-series validation strategies across multiple
+                prediction horizons: 1m, 5m, 15m, 30m, and 60m.
+            </li>
+
+            <li>
+                Developed a production-oriented workflow with Feature Store,
+                Docker, and FastAPI components for future real-time deployment.
+            </li>
+        </ul>
+    </article>
+
+
+    <article class="project-item">
+        <div class="item-header">
+            <div>
+                <h3>Credit Card Fraud Detection Pipeline</h3>
+                <p class="project-meta">
+                    XGBoost · Imbalanced Learning · Optuna
+                </p>
+            </div>
+
+            <a href="#" class="project-link">GitHub ↗</a>
+        </div>
+
+        <ul>
+            <li>
+                Developed a machine learning pipeline for credit card fraud
+                detection using XGBoost on highly imbalanced transaction data.
+            </li>
+
+            <li>
+                Implemented SMOTE and scale_pos_weight to improve minority
+                class detection.
+            </li>
+
+            <li>
+                Performed hyperparameter optimization with Optuna and evaluated
+                models using Precision, Recall, F1-score, ROC-AUC, and PR Curve.
+            </li>
+
+            <li>
+                Achieved approximately 90% Precision and 85% Recall through
+                model tuning and threshold optimization.
+            </li>
+
+            <li>
+                Addressed extreme class imbalance with 284,315 legitimate and
+                492 fraudulent transactions.
+            </li>
+        </ul>
+    </article>
+</section>
